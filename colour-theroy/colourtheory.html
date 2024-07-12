@@ -49,7 +49,7 @@
 
                 <!-- TOGGLE MENU -->
                 <div id="toggle">
-                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <i class="bx bx-menu dropbtn" onclick="myFunction()"></i>
                     <div id="myDropdown" class="dropdown-content">
                         <div class="top">
                             <a href="menHomePage.html">men</a>
@@ -71,8 +71,45 @@
 
     <h1 style="color: #ff5733; font-size: 70px; text-align: center; font-family:fantasy;margin-top:7%;">
         INTRODUCING COLOUR-THEORY BY MYNTRA
-      </h1>
-      
+    </h1>
+
+    <h1>Get Color Recommendations</h1>
+    <select id="skinToneSelect">
+        <option value="">Select your skin tone</option>
+        <option value="Brown">Brown</option>
+        <option value="Dark">Dark</option>
+        <option value="Olive">Olive</option>
+        <option value="Dusky">Dusky</option>
+        <option value="Wheatish">Wheatish</option>
+        <option value="Fair">Fair</option>
+    </select>
+    <button id="getRecommendation">Get Recommendation</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#getRecommendation').click(function() {
+                var skinTone = $('#skinToneSelect').val();
+                if (skinTone) {
+                    $.ajax({
+                        url: 'http://127.0.0.1:5000/recommend',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ skin_tone: skinTone }),
+                        success: function(response) {
+                            alert('Recommended colors: ' + response.join(', '));
+                        },
+                        error: function(error) {
+                            console.error('Error:', error);
+                            alert('Error retrieving recommendations');
+                        }
+                    });
+                } else {
+                    alert('Please select a skin tone');
+                }
+            });
+        });
+    </script>
 
       <!-- TOP BRANDS DISPLAY 1 HEADING -->
       <h1 class="brand_heading">biggest deals on top brands</h1>
@@ -95,11 +132,11 @@
        <div id="categoryBag_women" class="container categoryBag_women"></div>
 
 
-       <!-- TOP BRAND DISPLAY 2 HEADING -->
+       <!--TOP BRAND DISPLAY 2 HEADING -->
        <h1 class="brand_heading">explore top brands</h1>
        <div id="explore_more_women" class="display container explore_more_women"></div>
 
-         <!-- CATEGORIES DISPLAY 2 -->
+         <!--CATEGORIES DISPLAY 2--> 
        <h1 class="brand_heading">trending in western wear</h1>
          <div class="container builder">
             <div><img src="https://bit.ly/3wMju21" alt="category1"></div>
@@ -120,7 +157,7 @@
          </div>
 
 
-          <!-- CATEGORIES DISPLAY 4 -->
+          <!--CATEGORIES DISPLAY 4 -->
           <h1 class="brand_heading">trending in sports wear</h1>
           <div class="container builder">
              <div><img src="https://bit.ly/3K69y7H" alt="category1"></div>
@@ -131,7 +168,7 @@
           </div>
 
 
-          <!-- CATEGORIES DISPLAY 5 -->
+          <!--CATEGORIES DISPLAY 5 -->
           <h1 class="brand_heading">trending in footwear</h1>
           <div class="container builder">
              <div><img src="https://bit.ly/3Lm8hJN" alt="category1"></div>
@@ -151,3 +188,4 @@
              <div class="forWeb"><img src="https://bit.ly/35jAgu6" alt="category4"></div>
              <div class="forWeb"><img src="https://bit.ly/3IN87cD" alt="category5"></div>
           </div>
+</body>

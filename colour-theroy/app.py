@@ -1,49 +1,70 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS 
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+import joblib
 from sklearn.preprocessing import LabelEncoder
+import os
 
-# Load the dataset
-df = pd.read_csv('skin_tone_colors_dataset.csv')
-df.dropna(inplace=True)
+# Load or train the model
+model_path = 'skin_tone_model.pkl'
+if os.path.exists(model_path):
+    model = joblib.load(model_path)
+else:
+    # Load your dataset
+    df = pd.read_csv('C:/Users/anany/OneDrive/Desktop/WeForShe/colour-theroy/skin_tone_colors_dataset.csv')
 
-# Encode categorical variables
-le_skin_tone = LabelEncoder()
-le_color = LabelEncoder()
+    # Check for missing values
+    print("Missing values:\n", df.isnull().sum())
 
-df['Skin Tone'] = le_skin_tone.fit_transform(df['Skin Tone'])
-df['Color 1'] = le_color.fit_transform(df['Color 1'])
-df['Color 2'] = le_color.fit_transform(df['Color 2'])
-df['Color 3'] = le_color.fit_transform(df['Color 3'])
-df['Color 4'] = le_color.fit_transform(df['Color 4'])
-df['Color 5'] = le_color.fit_transform(df['Color 5'])
+    # Ensure the 'Skin Tone' column exists
+    if 'Skin Tone' in df.columns:
+        df.dropna(subset=['Skin Tone'], inplace=True)
 
-# Function to train and recommend colors based on skin tone
-def recommend_colors(skin_tone):
-    skin_tone_encoded = le_skin_tone.transform([skin_tone])[0]
-    recommended_colors = []
+        # Map skin tones to categories
+        df['Skin Tone Category'] = df['Skin Tone']
 
-    for color_column in ['Color 1', 'Color 2', 'Color 3', 'Color 4', 'Color 5']:
-        X = df[['Skin Tone']]
-        y = df[color_column]
-        model = RandomForestClassifier()
-        model.fit(X, y)
-        skin_tone_encoded_arr = [[skin_tone_encoded]]
-        color_prob = model.predict_proba(skin_tone_encoded_arr)[0]
-        recommended_color_idx = color_prob.argmax()
-        recommended_color = le_color.inverse_transform([recommended_color_idx])[0]
-        recommended_colors.append(recommended_color)
+        # Prepare features and labels
+        features = df[['Color 1', 'Color 2', 'Color 3', 'Color 4', 'Color 5']]
+        labels = df['Skin Tone Category']
 
-    return recommended_colors
+        le = LabelEncoder()
+        for column in features.columns:
+            features.loc[:, column] = le.fit_transform(features[column])  # Use .loc to avoid warnings
+
+        # Split the data
+        X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)
+
+        # Train the model
+        model = DecisionTreeClassifier()
+        model.fit(X_train, y_train)
+
+        # Save the model
+        joblib.dump(model, model_path)
+    else:
+        raise KeyError("The required column 'Skin Tone' is missing from the dataset.")
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/recommend', methods=['POST'])
-def recommend():
+def recommend_colors():
     data = request.json
-    skin_tone = data['skin_tone']
-    recommendations = recommend_colors(skin_tone)
-    return jsonify(recommendations)
+    skin_tone = data.get('skin_tone')
+
+    # Example mapping (this should be adjusted based on your dataset)
+    recommendations = {
+        'Brown': ['#A52A2A', '#DEB887', '#D2691E'],
+        'Dark': ['#4B0082', '#000000', '#800000'],
+        'Olive': ['#808000', '#F0E68C', '#ADFF2F'],
+        'Dusky': ['#A0522D', '#CD853F', '#D2691E'],
+        'Wheatish': ['#F5DEB3', '#FFD700', '#FFDAB9'],
+        'Fair': ['#FFFACD', '#FFE4B5', '#FFEFD5']
+    }
+
+    recommended_colors = recommendations.get(skin_tone, [])
+    return jsonify(recommended_colors)
 
 if __name__ == '__main__':
     app.run(debug=True)
