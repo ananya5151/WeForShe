@@ -1,0 +1,401 @@
+ID,Skin Tone,Color 1,Color 2,Color 3,Color 4,Color 5
+1,Brown,Royal Blue,Maroon,Emerald Green,Purple,Bold Red
+2,Dark,Plum,Charcoal,Forest Green,Navy Blue,Deep Violet
+3,Olive,Mustard,Teal,Burnt Orange,Terracotta,Moss Green
+4,Dark,Plum,Deep Violet,Forest Green,Navy Blue,Charcoal
+5,Dark,Navy Blue,Plum,Deep Violet,Forest Green,Charcoal
+6,Brown,Bold Red,Emerald Green,Purple,Royal Blue,Maroon
+7,Dark,Navy Blue,Forest Green,Deep Violet,Charcoal,Plum
+8,Olive,Terracotta,Mustard,Burnt Orange,Teal,Moss Green
+9,Olive,Teal,Burnt Orange,Mustard,Terracotta,Moss Green
+10,Olive,Terracotta,Moss Green,Mustard,Burnt Orange,Teal
+11,Olive,Teal,Burnt Orange,Moss Green,Terracotta,Mustard
+12,Brown,Bold Red,Emerald Green,Royal Blue,Purple,Maroon
+13,Dusky,Amber,Bronze,Deep Peach,Rich Burgundy,Copper
+14,Wheatish,Peach,Warm Yellow,Gold,Olive Green,Coral
+15,Dark,Forest Green,Navy Blue,Plum,Deep Violet,Charcoal
+16,Olive,Teal,Terracotta,Mustard,Moss Green,Burnt Orange
+17,Dusky,Bronze,Copper,Amber,Deep Peach,Rich Burgundy
+18,Dusky,Rich Burgundy,Amber,Deep Peach,Copper,Bronze
+19,Dark,Charcoal,Deep Violet,Plum,Navy Blue,Forest Green
+20,Dusky,Amber,Copper,Rich Burgundy,Deep Peach,Bronze
+21,Dusky,Copper,Rich Burgundy,Bronze,Amber,Deep Peach
+22,Brown,Bold Red,Emerald Green,Royal Blue,Maroon,Purple
+23,Brown,Purple,Royal Blue,Bold Red,Emerald Green,Maroon
+24,Dark,Plum,Deep Violet,Charcoal,Forest Green,Navy Blue
+25,Dark,Forest Green,Charcoal,Navy Blue,Deep Violet,Plum
+26,Olive,Mustard,Burnt Orange,Moss Green,Teal,Terracotta
+27,Dusky,Amber,Copper,Deep Peach,Rich Burgundy,Bronze
+28,Olive,Teal,Mustard,Moss Green,Burnt Orange,Terracotta
+29,Wheatish,Coral,Warm Yellow,Gold,Olive Green,Peach
+30,Brown,Royal Blue,Maroon,Emerald Green,Purple,Bold Red
+31,Olive,Moss Green,Burnt Orange,Terracotta,Mustard,Teal
+32,Fair,Lavender,Pastel Pink,Light Blue,Mint Green,Light Gray
+33,Fair,Mint Green,Light Blue,Light Gray,Lavender,Pastel Pink
+34,Olive,Mustard,Moss Green,Burnt Orange,Teal,Terracotta
+35,Dusky,Amber,Copper,Rich Burgundy,Bronze,Deep Peach
+36,Fair,Light Blue,Light Gray,Mint Green,Pastel Pink,Lavender
+37,Brown,Royal Blue,Purple,Bold Red,Emerald Green,Maroon
+38,Dark,Navy Blue,Deep Violet,Plum,Charcoal,Forest Green
+39,Wheatish,Peach,Warm Yellow,Coral,Olive Green,Gold
+40,Olive,Terracotta,Moss Green,Mustard,Burnt Orange,Teal
+41,Dusky,Deep Peach,Amber,Rich Burgundy,Copper,Bronze
+42,Dark,Deep Violet,Plum,Navy Blue,Charcoal,Forest Green
+43,Dark,Navy Blue,Plum,Charcoal,Deep Violet,Forest Green
+44,Dusky,Deep Peach,Bronze,Copper,Rich Burgundy,Amber
+45,Wheatish,Coral,Peach,Olive Green,Warm Yellow,Gold
+46,Dark,Charcoal,Deep Violet,Forest Green,Plum,Navy Blue
+47,Olive,Mustard,Terracotta,Moss Green,Burnt Orange,Teal
+48,Brown,Royal Blue,Emerald Green,Maroon,Bold Red,Purple
+49,Dark,Charcoal,Navy Blue,Plum,Deep Violet,Forest Green
+50,Dark,Navy Blue,Charcoal,Deep Violet,Plum,Forest Green
+51,Dusky,Copper,Amber,Bronze,Deep Peach,Rich Burgundy
+52,Wheatish,Gold,Peach,Coral,Olive Green,Warm Yellow
+53,Fair,Light Blue,Pastel Pink,Light Gray,Mint Green,Lavender
+54,Olive,Mustard,Terracotta,Moss Green,Teal,Burnt Orange
+55,Dark,Deep Violet,Charcoal,Navy Blue,Plum,Forest Green
+56,Dark,Charcoal,Deep Violet,Forest Green,Plum,Navy Blue
+57,Dusky,Amber,Copper,Bronze,Rich Burgundy,Deep Peach
+58,Olive,Terracotta,Moss Green,Teal,Mustard,Burnt Orange
+59,Dusky,Rich Burgundy,Amber,Bronze,Deep Peach,Copper
+60,Brown,Purple,Bold Red,Royal Blue,Emerald Green,Maroon
+61,Fair,Lavender,Light Gray,Mint Green,Light Blue,Pastel Pink
+62,Dusky,Bronze,Copper,Deep Peach,Rich Burgundy,Amber
+63,Fair,Light Blue,Mint Green,Lavender,Light Gray,Pastel Pink
+64,Fair,Light Gray,Light Blue,Mint Green,Pastel Pink,Lavender
+65,Brown,Emerald Green,Bold Red,Maroon,Purple,Royal Blue
+66,Olive,Teal,Terracotta,Moss Green,Burnt Orange,Mustard
+67,Brown,Royal Blue,Maroon,Purple,Bold Red,Emerald Green
+68,Dark,Navy Blue,Plum,Charcoal,Deep Violet,Forest Green
+69,Brown,Bold Red,Emerald Green,Purple,Royal Blue,Maroon
+70,Dusky,Rich Burgundy,Amber,Copper,Deep Peach,Bronze
+71,Olive,Teal,Moss Green,Mustard,Terracotta,Burnt Orange
+72,Olive,Mustard,Moss Green,Teal,Burnt Orange,Terracotta
+73,Olive,Mustard,Terracotta,Teal,Burnt Orange,Moss Green
+74,Fair,Pastel Pink,Light Gray,Light Blue,Mint Green,Lavender
+75,Brown,Bold Red,Royal Blue,Emerald Green,Maroon,Purple
+76,Fair,Light Blue,Pastel Pink,Lavender,Light Gray,Mint Green
+77,Dusky,Rich Burgundy,Copper,Bronze,Deep Peach,Amber
+78,Fair,Pastel Pink,Light Blue,Lavender,Mint Green,Light Gray
+79,Wheatish,Gold,Olive Green,Peach,Warm Yellow,Coral
+80,Dusky,Copper,Bronze,Deep Peach,Rich Burgundy,Amber
+81,Dark,Plum,Deep Violet,Charcoal,Navy Blue,Forest Green
+82,Wheatish,Coral,Warm Yellow,Peach,Gold,Olive Green
+83,Olive,Terracotta,Teal,Burnt Orange,Mustard,Moss Green
+84,Wheatish,Olive Green,Coral,Warm Yellow,Gold,Peach
+85,Dark,Deep Violet,Plum,Navy Blue,Forest Green,Charcoal
+86,Dark,Plum,Charcoal,Forest Green,Navy Blue,Deep Violet
+87,Wheatish,Coral,Peach,Olive Green,Warm Yellow,Gold
+88,Olive,Teal,Terracotta,Moss Green,Burnt Orange,Mustard
+89,Olive,Moss Green,Teal,Mustard,Burnt Orange,Terracotta
+90,Olive,Mustard,Burnt Orange,Terracotta,Moss Green,Teal
+91,Wheatish,Gold,Coral,Olive Green,Peach,Warm Yellow
+92,Wheatish,Coral,Peach,Warm Yellow,Gold,Olive Green
+93,Brown,Emerald Green,Purple,Bold Red,Royal Blue,Maroon
+94,Wheatish,Peach,Gold,Coral,Olive Green,Warm Yellow
+95,Brown,Bold Red,Royal Blue,Emerald Green,Maroon,Purple
+96,Wheatish,Olive Green,Gold,Coral,Warm Yellow,Peach
+97,Olive,Moss Green,Burnt Orange,Terracotta,Teal,Mustard
+98,Brown,Emerald Green,Purple,Maroon,Royal Blue,Bold Red
+99,Brown,Royal Blue,Purple,Emerald Green,Maroon,Bold Red
+100,Fair,Mint Green,Lavender,Light Blue,Pastel Pink,Light Gray
+101,Fair,Light Blue,Mint Green,Lavender,Pastel Pink,Light Gray
+102,Wheatish,Olive Green,Peach,Coral,Gold,Warm Yellow
+103,Dusky,Rich Burgundy,Copper,Amber,Bronze,Deep Peach
+104,Dusky,Amber,Rich Burgundy,Bronze,Copper,Deep Peach
+105,Olive,Mustard,Terracotta,Burnt Orange,Teal,Moss Green
+106,Fair,Light Gray,Light Blue,Mint Green,Lavender,Pastel Pink
+107,Olive,Teal,Moss Green,Burnt Orange,Mustard,Terracotta
+108,Brown,Emerald Green,Bold Red,Purple,Maroon,Royal Blue
+109,Dusky,Amber,Deep Peach,Bronze,Copper,Rich Burgundy
+110,Olive,Teal,Terracotta,Mustard,Burnt Orange,Moss Green
+111,Dusky,Rich Burgundy,Deep Peach,Bronze,Amber,Copper
+112,Fair,Light Blue,Light Gray,Mint Green,Pastel Pink,Lavender
+113,Dark,Deep Violet,Forest Green,Charcoal,Plum,Navy Blue
+114,Dark,Forest Green,Plum,Charcoal,Navy Blue,Deep Violet
+115,Fair,Light Gray,Pastel Pink,Light Blue,Lavender,Mint Green
+116,Dusky,Copper,Amber,Deep Peach,Rich Burgundy,Bronze
+117,Brown,Bold Red,Maroon,Royal Blue,Emerald Green,Purple
+118,Dark,Charcoal,Deep Violet,Forest Green,Plum,Navy Blue
+119,Dark,Deep Violet,Plum,Forest Green,Navy Blue,Charcoal
+120,Dusky,Bronze,Deep Peach,Copper,Amber,Rich Burgundy
+121,Olive,Burnt Orange,Teal,Terracotta,Mustard,Moss Green
+122,Dark,Navy Blue,Forest Green,Deep Violet,Charcoal,Plum
+123,Brown,Royal Blue,Maroon,Purple,Bold Red,Emerald Green
+124,Wheatish,Peach,Coral,Warm Yellow,Gold,Olive Green
+125,Dark,Deep Violet,Forest Green,Navy Blue,Charcoal,Plum
+126,Fair,Pastel Pink,Lavender,Light Gray,Mint Green,Light Blue
+127,Olive,Terracotta,Mustard,Teal,Moss Green,Burnt Orange
+128,Wheatish,Gold,Warm Yellow,Peach,Olive Green,Coral
+129,Dusky,Amber,Copper,Deep Peach,Bronze,Rich Burgundy
+130,Olive,Burnt Orange,Terracotta,Teal,Moss Green,Mustard
+131,Brown,Maroon,Bold Red,Purple,Royal Blue,Emerald Green
+132,Brown,Maroon,Emerald Green,Bold Red,Royal Blue,Purple
+133,Dusky,Bronze,Copper,Deep Peach,Rich Burgundy,Amber
+134,Dark,Charcoal,Plum,Navy Blue,Deep Violet,Forest Green
+135,Dark,Deep Violet,Navy Blue,Charcoal,Forest Green,Plum
+136,Dusky,Copper,Deep Peach,Bronze,Rich Burgundy,Amber
+137,Wheatish,Coral,Gold,Peach,Olive Green,Warm Yellow
+138,Wheatish,Warm Yellow,Gold,Peach,Olive Green,Coral
+139,Dark,Forest Green,Navy Blue,Plum,Deep Violet,Charcoal
+140,Dusky,Bronze,Copper,Deep Peach,Rich Burgundy,Amber
+141,Brown,Emerald Green,Maroon,Purple,Bold Red,Royal Blue
+142,Olive,Burnt Orange,Mustard,Moss Green,Terracotta,Teal
+143,Fair,Mint Green,Pastel Pink,Lavender,Light Gray,Light Blue
+144,Dusky,Rich Burgundy,Deep Peach,Bronze,Copper,Amber
+145,Olive,Mustard,Burnt Orange,Moss Green,Terracotta,Teal
+146,Brown,Royal Blue,Bold Red,Emerald Green,Maroon,Purple
+147,Olive,Teal,Moss Green,Burnt Orange,Mustard,Terracotta
+148,Fair,Lavender,Light Gray,Light Blue,Pastel Pink,Mint Green
+149,Dusky,Rich Burgundy,Copper,Amber,Deep Peach,Bronze
+150,Dark,Plum,Charcoal,Forest Green,Deep Violet,Navy Blue
+151,Wheatish,Gold,Peach,Warm Yellow,Coral,Olive Green
+152,Dusky,Rich Burgundy,Deep Peach,Bronze,Amber,Copper
+153,Dusky,Deep Peach,Bronze,Copper,Amber,Rich Burgundy
+154,Brown,Royal Blue,Purple,Emerald Green,Bold Red,Maroon
+155,Olive,Mustard,Teal,Moss Green,Burnt Orange,Terracotta
+156,Fair,Pastel Pink,Light Gray,Light Blue,Mint Green,Lavender
+157,Olive,Mustard,Moss Green,Teal,Burnt Orange,Terracotta
+158,Brown,Purple,Emerald Green,Bold Red,Royal Blue,Maroon
+159,Dusky,Deep Peach,Copper,Amber,Rich Burgundy,Bronze
+160,Dusky,Rich Burgundy,Copper,Bronze,Amber,Deep Peach
+161,Dark,Navy Blue,Charcoal,Deep Violet,Plum,Forest Green
+162,Dark,Charcoal,Plum,Navy Blue,Deep Violet,Forest Green
+163,Dusky,Rich Burgundy,Bronze,Copper,Deep Peach,Amber
+164,Brown,Bold Red,Maroon,Emerald Green,Royal Blue,Purple
+165,Dusky,Copper,Rich Burgundy,Bronze,Amber,Deep Peach
+166,Wheatish,Coral,Gold,Warm Yellow,Olive Green,Peach
+167,Brown,Maroon,Purple,Bold Red,Emerald Green,Royal Blue
+168,Wheatish,Gold,Olive Green,Warm Yellow,Peach,Coral
+169,Fair,Light Gray,Lavender,Pastel Pink,Mint Green,Light Blue
+170,Dusky,Copper,Rich Burgundy,Bronze,Deep Peach,Amber
+171,Wheatish,Warm Yellow,Coral,Olive Green,Peach,Gold
+172,Fair,Lavender,Light Gray,Mint Green,Pastel Pink,Light Blue
+173,Olive,Mustard,Terracotta,Moss Green,Teal,Burnt Orange
+174,Fair,Lavender,Light Blue,Mint Green,Pastel Pink,Light Gray
+175,Dusky,Amber,Copper,Bronze,Rich Burgundy,Deep Peach
+176,Wheatish,Warm Yellow,Gold,Coral,Peach,Olive Green
+177,Olive,Mustard,Burnt Orange,Moss Green,Teal,Terracotta
+178,Wheatish,Gold,Olive Green,Peach,Coral,Warm Yellow
+179,Wheatish,Olive Green,Coral,Warm Yellow,Gold,Peach
+180,Olive,Terracotta,Moss Green,Teal,Mustard,Burnt Orange
+181,Brown,Maroon,Purple,Emerald Green,Bold Red,Royal Blue
+182,Brown,Royal Blue,Emerald Green,Purple,Maroon,Bold Red
+183,Fair,Pastel Pink,Lavender,Light Gray,Light Blue,Mint Green
+184,Dark,Charcoal,Deep Violet,Forest Green,Navy Blue,Plum
+185,Dark,Forest Green,Navy Blue,Deep Violet,Charcoal,Plum
+186,Olive,Terracotta,Burnt Orange,Mustard,Teal,Moss Green
+187,Fair,Light Gray,Mint Green,Lavender,Light Blue,Pastel Pink
+188,Dark,Charcoal,Navy Blue,Plum,Forest Green,Deep Violet
+189,Dusky,Amber,Copper,Rich Burgundy,Bronze,Deep Peach
+190,Brown,Bold Red,Emerald Green,Royal Blue,Maroon,Purple
+191,Wheatish,Coral,Warm Yellow,Olive Green,Peach,Gold
+192,Fair,Mint Green,Light Gray,Lavender,Light Blue,Pastel Pink
+193,Olive,Burnt Orange,Mustard,Terracotta,Teal,Moss Green
+194,Olive,Teal,Burnt Orange,Mustard,Moss Green,Terracotta
+195,Wheatish,Olive Green,Gold,Coral,Warm Yellow,Peach
+196,Dark,Forest Green,Deep Violet,Navy Blue,Plum,Charcoal
+197,Dark,Plum,Deep Violet,Charcoal,Navy Blue,Forest Green
+198,Dark,Forest Green,Deep Violet,Plum,Navy Blue,Charcoal
+199,Dark,Navy Blue,Deep Violet,Charcoal,Plum,Forest Green
+200,Wheatish,Olive Green,Coral,Gold,Warm Yellow,Peach
+201,Olive,Teal,Mustard,Moss Green,Burnt Orange,Terracotta
+202,Dusky,Deep Peach,Copper,Amber,Bronze,Rich Burgundy
+203,Olive,Mustard,Moss Green,Teal,Terracotta,Burnt Orange
+204,Fair,Light Gray,Lavender,Light Blue,Mint Green,Pastel Pink
+205,Brown,Purple,Emerald Green,Maroon,Bold Red,Royal Blue
+206,Brown,Maroon,Royal Blue,Emerald Green,Bold Red,Purple
+207,Fair,Pastel Pink,Light Gray,Mint Green,Lavender,Light Blue
+208,Dusky,Deep Peach,Amber,Copper,Bronze,Rich Burgundy
+209,Wheatish,Peach,Warm Yellow,Gold,Coral,Olive Green
+210,Olive,Terracotta,Mustard,Moss Green,Teal,Burnt Orange
+211,Dark,Forest Green,Navy Blue,Plum,Charcoal,Deep Violet
+212,Brown,Bold Red,Maroon,Emerald Green,Purple,Royal Blue
+213,Wheatish,Gold,Coral,Olive Green,Peach,Warm Yellow
+214,Fair,Lavender,Pastel Pink,Light Blue,Mint Green,Light Gray
+215,Wheatish,Gold,Coral,Peach,Olive Green,Warm Yellow
+216,Dusky,Amber,Bronze,Rich Burgundy,Deep Peach,Copper
+217,Dusky,Copper,Amber,Deep Peach,Rich Burgundy,Bronze
+218,Dark,Charcoal,Plum,Deep Violet,Forest Green,Navy Blue
+219,Brown,Maroon,Royal Blue,Emerald Green,Bold Red,Purple
+220,Fair,Light Gray,Mint Green,Light Blue,Lavender,Pastel Pink
+221,Dusky,Bronze,Amber,Rich Burgundy,Copper,Deep Peach
+222,Fair,Mint Green,Light Blue,Pastel Pink,Light Gray,Lavender
+223,Dusky,Rich Burgundy,Deep Peach,Bronze,Amber,Copper
+224,Brown,Royal Blue,Purple,Bold Red,Emerald Green,Maroon
+225,Wheatish,Coral,Gold,Warm Yellow,Peach,Olive Green
+226,Dark,Charcoal,Navy Blue,Forest Green,Deep Violet,Plum
+227,Dark,Navy Blue,Charcoal,Plum,Deep Violet,Forest Green
+228,Olive,Mustard,Burnt Orange,Terracotta,Moss Green,Teal
+229,Dark,Deep Violet,Plum,Navy Blue,Charcoal,Forest Green
+230,Dusky,Bronze,Rich Burgundy,Copper,Deep Peach,Amber
+231,Fair,Lavender,Light Blue,Light Gray,Pastel Pink,Mint Green
+232,Brown,Maroon,Bold Red,Royal Blue,Emerald Green,Purple
+233,Dark,Deep Violet,Forest Green,Plum,Navy Blue,Charcoal
+234,Fair,Lavender,Pastel Pink,Light Gray,Mint Green,Light Blue
+235,Fair,Pastel Pink,Light Gray,Light Blue,Mint Green,Lavender
+236,Wheatish,Coral,Gold,Olive Green,Peach,Warm Yellow
+237,Dark,Charcoal,Deep Violet,Forest Green,Plum,Navy Blue
+238,Dusky,Copper,Rich Burgundy,Amber,Bronze,Deep Peach
+239,Fair,Light Gray,Mint Green,Lavender,Pastel Pink,Light Blue
+240,Fair,Light Blue,Light Gray,Pastel Pink,Mint Green,Lavender
+241,Wheatish,Gold,Olive Green,Peach,Coral,Warm Yellow
+242,Brown,Maroon,Emerald Green,Purple,Royal Blue,Bold Red
+243,Dark,Charcoal,Forest Green,Navy Blue,Deep Violet,Plum
+244,Olive,Moss Green,Burnt Orange,Terracotta,Mustard,Teal
+245,Fair,Light Blue,Pastel Pink,Mint Green,Lavender,Light Gray
+246,Wheatish,Warm Yellow,Coral,Peach,Olive Green,Gold
+247,Dark,Forest Green,Charcoal,Plum,Deep Violet,Navy Blue
+248,Olive,Moss Green,Burnt Orange,Terracotta,Mustard,Teal
+249,Wheatish,Gold,Peach,Olive Green,Coral,Warm Yellow
+250,Fair,Lavender,Mint Green,Light Blue,Light Gray,Pastel Pink
+251,Brown,Maroon,Purple,Royal Blue,Bold Red,Emerald Green
+252,Brown,Purple,Maroon,Bold Red,Emerald Green,Royal Blue
+253,Dusky,Deep Peach,Copper,Amber,Bronze,Rich Burgundy
+254,Brown,Bold Red,Purple,Royal Blue,Maroon,Emerald Green
+255,Dark,Navy Blue,Forest Green,Deep Violet,Plum,Charcoal
+256,Fair,Lavender,Light Blue,Mint Green,Pastel Pink,Light Gray
+257,Fair,Mint Green,Light Blue,Light Gray,Lavender,Pastel Pink
+258,Fair,Mint Green,Light Blue,Lavender,Light Gray,Pastel Pink
+259,Fair,Mint Green,Light Gray,Light Blue,Pastel Pink,Lavender
+260,Dusky,Bronze,Copper,Rich Burgundy,Amber,Deep Peach
+261,Dark,Charcoal,Plum,Navy Blue,Forest Green,Deep Violet
+262,Dark,Plum,Navy Blue,Charcoal,Deep Violet,Forest Green
+263,Olive,Burnt Orange,Moss Green,Teal,Mustard,Terracotta
+264,Wheatish,Warm Yellow,Peach,Gold,Olive Green,Coral
+265,Wheatish,Peach,Gold,Coral,Olive Green,Warm Yellow
+266,Dusky,Amber,Rich Burgundy,Deep Peach,Copper,Bronze
+267,Dark,Navy Blue,Charcoal,Deep Violet,Plum,Forest Green
+268,Wheatish,Olive Green,Warm Yellow,Coral,Peach,Gold
+269,Olive,Burnt Orange,Teal,Mustard,Terracotta,Moss Green
+270,Brown,Purple,Emerald Green,Bold Red,Royal Blue,Maroon
+271,Fair,Light Blue,Pastel Pink,Lavender,Light Gray,Mint Green
+272,Dusky,Bronze,Rich Burgundy,Deep Peach,Amber,Copper
+273,Brown,Bold Red,Royal Blue,Purple,Maroon,Emerald Green
+274,Brown,Bold Red,Purple,Emerald Green,Royal Blue,Maroon
+275,Wheatish,Warm Yellow,Peach,Olive Green,Coral,Gold
+276,Olive,Burnt Orange,Moss Green,Mustard,Terracotta,Teal
+277,Wheatish,Coral,Olive Green,Warm Yellow,Gold,Peach
+278,Dark,Deep Violet,Navy Blue,Forest Green,Charcoal,Plum
+279,Olive,Teal,Moss Green,Terracotta,Burnt Orange,Mustard
+280,Fair,Light Gray,Lavender,Mint Green,Light Blue,Pastel Pink
+281,Dark,Forest Green,Deep Violet,Plum,Charcoal,Navy Blue
+282,Wheatish,Gold,Warm Yellow,Peach,Coral,Olive Green
+283,Fair,Light Blue,Lavender,Pastel Pink,Light Gray,Mint Green
+284,Fair,Lavender,Light Gray,Light Blue,Pastel Pink,Mint Green
+285,Dark,Deep Violet,Plum,Forest Green,Charcoal,Navy Blue
+286,Dusky,Copper,Rich Burgundy,Deep Peach,Bronze,Amber
+287,Wheatish,Gold,Warm Yellow,Coral,Olive Green,Peach
+288,Olive,Burnt Orange,Terracotta,Teal,Mustard,Moss Green
+289,Wheatish,Gold,Warm Yellow,Peach,Coral,Olive Green
+290,Dark,Plum,Deep Violet,Navy Blue,Charcoal,Forest Green
+291,Dusky,Amber,Copper,Deep Peach,Bronze,Rich Burgundy
+292,Brown,Maroon,Emerald Green,Bold Red,Purple,Royal Blue
+293,Dusky,Bronze,Copper,Rich Burgundy,Amber,Deep Peach
+294,Fair,Light Gray,Lavender,Light Blue,Pastel Pink,Mint Green
+295,Brown,Maroon,Emerald Green,Purple,Royal Blue,Bold Red
+296,Wheatish,Olive Green,Peach,Coral,Warm Yellow,Gold
+297,Brown,Emerald Green,Maroon,Royal Blue,Purple,Bold Red
+298,Fair,Mint Green,Light Gray,Light Blue,Pastel Pink,Lavender
+299,Dark,Plum,Charcoal,Navy Blue,Deep Violet,Forest Green
+300,Brown,Emerald Green,Purple,Royal Blue,Bold Red,Maroon
+301,Wheatish,Warm Yellow,Olive Green,Gold,Peach,Coral
+302,Brown,Purple,Bold Red,Royal Blue,Emerald Green,Maroon
+303,Olive,Mustard,Burnt Orange,Moss Green,Teal,Terracotta
+304,Olive,Terracotta,Moss Green,Mustard,Burnt Orange,Teal
+305,Dusky,Amber,Bronze,Deep Peach,Rich Burgundy,Copper
+306,Fair,Mint Green,Light Blue,Pastel Pink,Lavender,Light Gray
+307,Fair,Pastel Pink,Light Blue,Light Gray,Lavender,Mint Green
+308,Dark,Plum,Forest Green,Navy Blue,Deep Violet,Charcoal
+309,Dark,Plum,Forest Green,Charcoal,Navy Blue,Deep Violet
+310,Fair,Lavender,Light Blue,Mint Green,Pastel Pink,Light Gray
+311,Dark,Charcoal,Forest Green,Plum,Deep Violet,Navy Blue
+312,Dusky,Amber,Deep Peach,Rich Burgundy,Copper,Bronze
+313,Brown,Purple,Bold Red,Maroon,Royal Blue,Emerald Green
+314,Olive,Mustard,Moss Green,Burnt Orange,Terracotta,Teal
+315,Brown,Maroon,Royal Blue,Bold Red,Emerald Green,Purple
+316,Dusky,Copper,Amber,Bronze,Rich Burgundy,Deep Peach
+317,Brown,Maroon,Purple,Royal Blue,Emerald Green,Bold Red
+318,Fair,Light Gray,Light Blue,Pastel Pink,Mint Green,Lavender
+319,Dark,Charcoal,Deep Violet,Plum,Forest Green,Navy Blue
+320,Brown,Maroon,Royal Blue,Emerald Green,Bold Red,Purple
+321,Dark,Forest Green,Charcoal,Deep Violet,Navy Blue,Plum
+322,Wheatish,Warm Yellow,Olive Green,Gold,Coral,Peach
+323,Brown,Maroon,Purple,Royal Blue,Bold Red,Emerald Green
+324,Dark,Charcoal,Deep Violet,Forest Green,Navy Blue,Plum
+325,Olive,Burnt Orange,Moss Green,Terracotta,Mustard,Teal
+326,Dusky,Amber,Rich Burgundy,Deep Peach,Copper,Bronze
+327,Fair,Lavender,Light Blue,Pastel Pink,Mint Green,Light Gray
+328,Dark,Deep Violet,Forest Green,Plum,Navy Blue,Charcoal
+329,Wheatish,Olive Green,Warm Yellow,Gold,Peach,Coral
+330,Brown,Purple,Bold Red,Emerald Green,Royal Blue,Maroon
+331,Brown,Maroon,Emerald Green,Purple,Royal Blue,Bold Red
+332,Dark,Deep Violet,Navy Blue,Forest Green,Plum,Charcoal
+333,Olive,Mustard,Teal,Terracotta,Moss Green,Burnt Orange
+334,Dark,Navy Blue,Forest Green,Deep Violet,Plum,Charcoal
+335,Olive,Teal,Burnt Orange,Moss Green,Mustard,Terracotta
+336,Dusky,Amber,Bronze,Rich Burgundy,Deep Peach,Copper
+337,Dusky,Copper,Deep Peach,Rich Burgundy,Bronze,Amber
+338,Dusky,Amber,Bronze,Rich Burgundy,Copper,Deep Peach
+339,Dark,Plum,Forest Green,Navy Blue,Charcoal,Deep Violet
+340,Dusky,Copper,Amber,Deep Peach,Rich Burgundy,Bronze
+341,Wheatish,Peach,Gold,Coral,Olive Green,Warm Yellow
+342,Brown,Bold Red,Royal Blue,Purple,Maroon,Emerald Green
+343,Dusky,Deep Peach,Rich Burgundy,Copper,Bronze,Amber
+344,Dusky,Bronze,Deep Peach,Amber,Rich Burgundy,Copper
+345,Brown,Royal Blue,Purple,Emerald Green,Bold Red,Maroon
+346,Dusky,Deep Peach,Amber,Bronze,Rich Burgundy,Copper
+347,Dark,Plum,Charcoal,Navy Blue,Deep Violet,Forest Green
+348,Wheatish,Warm Yellow,Peach,Olive Green,Coral,Gold
+349,Dusky,Deep Peach,Bronze,Copper,Rich Burgundy,Amber
+350,Dark,Plum,Forest Green,Navy Blue,Charcoal,Deep Violet
+351,Wheatish,Warm Yellow,Olive Green,Gold,Coral,Peach
+352,Wheatish,Peach,Coral,Olive Green,Gold,Warm Yellow
+353,Wheatish,Olive Green,Gold,Coral,Warm Yellow,Peach
+354,Brown,Emerald Green,Maroon,Purple,Royal Blue,Bold Red
+355,Olive,Teal,Burnt Orange,Terracotta,Mustard,Moss Green
+356,Olive,Mustard,Teal,Moss Green,Burnt Orange,Terracotta
+357,Olive,Moss Green,Mustard,Burnt Orange,Teal,Terracotta
+358,Brown,Maroon,Purple,Royal Blue,Emerald Green,Bold Red
+359,Dark,Plum,Navy Blue,Charcoal,Deep Violet,Forest Green
+360,Brown,Emerald Green,Royal Blue,Purple,Maroon,Bold Red
+361,Dark,Navy Blue,Charcoal,Deep Violet,Plum,Forest Green
+362,Wheatish,Coral,Gold,Warm Yellow,Peach,Olive Green
+363,Olive,Terracotta,Moss Green,Mustard,Burnt Orange,Teal
+364,Wheatish,Olive Green,Warm Yellow,Peach,Coral,Gold
+365,Fair,Light Gray,Mint Green,Lavender,Pastel Pink,Light Blue
+366,Brown,Royal Blue,Maroon,Bold Red,Purple,Emerald Green
+367,Dark,Deep Violet,Forest Green,Charcoal,Plum,Navy Blue
+368,Brown,Bold Red,Purple,Emerald Green,Royal Blue,Maroon
+369,Wheatish,Olive Green,Peach,Warm Yellow,Coral,Gold
+370,Dark,Plum,Navy Blue,Forest Green,Deep Violet,Charcoal
+371,Dark,Navy Blue,Charcoal,Forest Green,Plum,Deep Violet
+372,Wheatish,Gold,Warm Yellow,Olive Green,Peach,Coral
+373,Fair,Light Blue,Mint Green,Lavender,Pastel Pink,Light Gray
+374,Fair,Mint Green,Pastel Pink,Light Gray,Lavender,Light Blue
+375,Dusky,Amber,Rich Burgundy,Copper,Deep Peach,Bronze
+376,Brown,Emerald Green,Bold Red,Purple,Maroon,Royal Blue
+377,Dusky,Bronze,Copper,Amber,Deep Peach,Rich Burgundy
+378,Dark,Navy Blue,Forest Green,Charcoal,Plum,Deep Violet
+379,Wheatish,Warm Yellow,Gold,Olive Green,Peach,Coral
+380,Fair,Light Gray,Light Blue,Mint Green,Lavender,Pastel Pink
+381,Fair,Mint Green,Light Gray,Lavender,Pastel Pink,Light Blue
+382,Dusky,Amber,Bronze,Deep Peach,Rich Burgundy,Copper
+383,Brown,Maroon,Purple,Royal Blue,Bold Red,Emerald Green
+384,Fair,Lavender,Light Gray,Light Blue,Mint Green,Pastel Pink
+385,Fair,Mint Green,Pastel Pink,Light Gray,Light Blue,Lavender
+386,Olive,Burnt Orange,Terracotta,Teal,Mustard,Moss Green
+387,Brown,Purple,Emerald Green,Royal Blue,Bold Red,Maroon
+388,Wheatish,Olive Green,Gold,Coral,Warm Yellow,Peach
+389,Dark,Plum,Navy Blue,Forest Green,Deep Violet,Charcoal
+390,Fair,Light Blue,Lavender,Pastel Pink,Mint Green,Light Gray
+391,Wheatish,Coral,Gold,Warm Yellow,Peach,Olive Green
+392,Fair,Light Blue,Mint Green,Light Gray,Pastel Pink,Lavender
+393,Wheatish,Olive Green,Gold,Peach,Warm Yellow,Coral
+394,Dark,Deep Violet,Navy Blue,Plum,Forest Green,Charcoal
+395,Dark,Navy Blue,Charcoal,Deep Violet,Plum,Forest Green
+396,Brown,Maroon,Emerald Green,Purple,Royal Blue,Bold Red
+397,Fair,Pastel Pink,Light Gray,Light Blue,Mint Green,Lavender
+398,Olive,Terracotta,Burnt Orange,Moss Green,Teal,Mustard
+399,Dusky,Bronze,Rich Burgundy,Deep Peach,Amber,Copper
+400,Dark,Charcoal,Navy Blue,Forest Green,Deep Violet,Plum
