@@ -76,7 +76,7 @@ def recommend_colors():
     {'name': 'Coral', 'hex': '#FF7F50'}
 ],
 
-       'Olive': [
+    'Olive': [
     {'name': 'Earthy Tones', 'hex': '#8B4513'},
     {'name': 'Dusty Pink', 'hex': '#DDA0DD'},   
     {'name': 'Teal', 'hex': '#008080'},         
@@ -106,7 +106,7 @@ def recommend_colors():
     {'name': 'Rust Orange', 'hex': '#B7410E'},
     {'name': 'Warm Gray', 'hex': '#A89F91'}
 ],
-       'Fair': [
+    'Fair': [
     {'name': 'Pastel Pink', 'hex': '#FFB6C1'},
     {'name': 'Light Blue', 'hex': '#ADD8E6'},
     {'name': 'Lavender', 'hex': '#E6E6FA'},

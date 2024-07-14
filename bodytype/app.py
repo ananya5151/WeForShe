@@ -63,5 +63,6 @@ def recommend_clothing():
 
     return jsonify({'body_type': body_type, 'recommendations': recommended_clothing})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(port=5001)
+
