@@ -6,6 +6,7 @@
     <title>COLOUR-THEORY</title>
     <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
     <link rel="stylesheet" href="colourtheory.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
@@ -68,28 +69,41 @@
                 </div>
 
     </header>
+    <h1 class="main-title">INTRODUCING COLOUR-THEORY BY MYNTRA</h1>
 
-    <h1 style="color: #ff5733; font-size: 70px; text-align: center; font-family:fantasy;margin-top:7%;">
-        INTRODUCING COLOUR-THEORY BY MYNTRA
-    </h1>
+<h1 class="recommendation-title">GET YOUR PERFECT COLOUR MATCH</h1>
+<div class="recommendation-section">
+    <div class="color-box" style="background-color: #DCAAA2;" data-skin-tone="Brown">
+        <span>Brown</span>
+    </div>
+    <div class="color-box" style="background-color: #8B4513;" data-skin-tone="Dark">
+        <span><b>Dark</b></span>
+    </div>
+    <div class="color-box" style="background-color: #C3B091;" data-skin-tone="Olive">
+        <span><b>Olive</b></span>
+    </div>
+    <div class="color-box" style="background-color: #A76E57;" data-skin-tone="Dusky">
+        <span><b>Dusky</b></span>
+    </div>
+    <div class="color-box" style="background-color: #E7B9A2;" data-skin-tone="Wheatish">
+        <span><b>Wheatish</b></span>
+    </div>
+    <div class="color-box" style="background-color: #F1D0C7;" data-skin-tone="Fair">
+        <span><b>Fair</b></span>
+    </div>
+</div>
+<button id="getRecommendation">JUST A CLICK AWAY</button>
+<div class="recommended-colors" id="recommendedColors"></div>
 
-    <h1>Get Color Recommendations</h1>
-    <select id="skinToneSelect">
-        <option value="">Select your skin tone</option>
-        <option value="Brown">Brown</option>
-        <option value="Dark">Dark</option>
-        <option value="Olive">Olive</option>
-        <option value="Dusky">Dusky</option>
-        <option value="Wheatish">Wheatish</option>
-        <option value="Fair">Fair</option>
-    </select>
-    <button id="getRecommendation">Get Recommendation</button>
+
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#getRecommendation').click(function() {
-                var skinTone = $('#skinToneSelect').val();
+                var skinTone = $('.color-box.selected').data('skin-tone');
+                
                 if (skinTone) {
                     $.ajax({
                         url: 'http://127.0.0.1:5000/recommend',
@@ -97,7 +111,12 @@
                         contentType: 'application/json',
                         data: JSON.stringify({ skin_tone: skinTone }),
                         success: function(response) {
-                            alert('Recommended colors: ' + response.join(', '));
+                            $('#recommendedColors').empty(); // Clear previous recommendations
+                            
+                            response.forEach(function(color) {
+                                var colorBox = $('<div class="color-box" style="background-color: ' + color.hex + ';">' + color.name + '</div>');
+                                $('#recommendedColors').append(colorBox);
+                            });
                         },
                         error: function(error) {
                             console.error('Error:', error);
@@ -105,11 +124,17 @@
                         }
                     });
                 } else {
-                    alert('Please select a skin tone');
+                    alert('Please select a skin tone.');
                 }
+            });
+            
+            $('.color-box').click(function() {
+                $('.color-box').removeClass('selected');
+                $(this).addClass('selected');
             });
         });
     </script>
+    
 
       <!-- TOP BRANDS DISPLAY 1 HEADING -->
       <h1 class="brand_heading">biggest deals on top brands</h1>
@@ -125,16 +150,6 @@
           <div class="forWeb"><img src="https://bit.ly/36Ymhu7" alt="brand9"></div>
           <div class="forWeb"><img src="https://bit.ly/3IN5iZ5" alt="brand10"></div>
       </div>
-
-
-       <!-- TOP CATEGORIES SECTION -->
-       <h1 class="brand_heading">categories to bag</h1>
-       <div id="categoryBag_women" class="container categoryBag_women"></div>
-
-
-       <!--TOP BRAND DISPLAY 2 HEADING -->
-       <h1 class="brand_heading">explore top brands</h1>
-       <div id="explore_more_women" class="display container explore_more_women"></div>
 
          <!--CATEGORIES DISPLAY 2--> 
        <h1 class="brand_heading">trending in western wear</h1>
