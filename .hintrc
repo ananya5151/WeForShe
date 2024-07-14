@@ -10,6 +10,15 @@
         "select-name": "off",
         "label": "off"
       }
+    ],
+    "meta-viewport": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "max-width: fit-content"
+        ]
+      }
     ]
   }
 }

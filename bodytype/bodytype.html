@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Type Clothing Recommendations</title>
+    <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
+    <link rel="stylesheet" href="bodytype.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MENU BAR -->
+    <header>
+        <!-- Logo and Navigation -->
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="../Homepages/homeLiving.html">home & living</a></li>
+            <li id="body"><a href="../bodytype/bodytype.html">BodyWISE</a><span>new</span></li>
+            <li id="colour"><a href="../colour-theroy/colourtheory.html">colour-theory</a><span>new</span></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <div id="drop">
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class="bx bx-menu dropbtn" onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="menHomePage.html">men</a>
+                    <a href="womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="homeLiving.html">home & living</a>
+                    <a href="../bodytype/bodytype.html">body</a>
+                    <a href="../colour-theroy/colourtheory.html">colour</a>
+                </div> 
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>           
+            </div>
+        </div>
+    </header>
+
+    <h1 class="recommendation-title">Body Type Clothing Recommendations</h1>
+    <section class="option-selection">
+        <h2>PLEASE SELECT</h2>
+        <label>
+            <input type="radio" name="option" value="know">
+            I know my body type.
+        </label>
+        <label>
+            <input type="radio" name="option" value="measurements">
+            Get my body type.
+        </label>
+    </section>
+    
+    <section class="measurements-input" style="display: none;">
+        <label for="bust">Bust Measurement:</label>
+        <input type="number" id="bust" placeholder="inches" required>
+        
+        <label for="waist">Waist Measurement:</label>
+        <input type="number" id="waist" placeholder="inches" required>
+        
+        <label for="hips">Hips Measurement:</label>
+        <input type="number" id="hips" placeholder="inches" required>
+    </section>
+
+    <section class="body-type-selection" style="display: none;">
+        <h3>SELECT YOUR BODYTYPE</h3>
+        <label>
+            <input type="radio" name="bodyType" value="Hourglass">
+            Hourglass
+        </label>
+        <label>
+            <input type="radio" name="bodyType" value="Pear">
+            Pear
+        </label>
+        <label>
+            <input type="radio" name="bodyType" value="Apple">
+            Apple
+        </label>
+        <label>
+            <input type="radio" name="bodyType" value="Rectangle">
+            Rectangle
+        </label>
+        <label>
+            <input type="radio" name="bodyType" value="Inverted Triangle">
+            Inverted Triangle
+        </label>
+    </section>
+
+    <button onclick="handleUserSelection()">Get Recommendations</button>
+    <div id="recommendations"></div>
+
+    <script>
+        document.querySelectorAll('input[name="option"]').forEach(input => {
+            input.addEventListener('change', function() {
+                const measurementSection = document.querySelector('.measurements-input');
+                const bodyTypeSection = document.querySelector('.body-type-selection');
+
+                if (this.value === 'measurements') {
+                    measurementSection.style.display = 'block';
+                    bodyTypeSection.style.display = 'none';
+                } else {
+                    measurementSection.style.display = 'none';
+                    bodyTypeSection.style.display = 'block';
+                }
+            });
+        });
+
+        async function getRecommendations(bust, waist, hips, bodyType) {
+    try {
+        console.log('Sending request with:', { bust, waist, hips, bodyType });
+        const response = await fetch('http://localhost:5000/recommend', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ bust, waist, hips, body_type: bodyType }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        console.log('Received data:', data);
+        displayRecommendations(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+
+        function handleUserSelection() {
+            const option = document.querySelector('input[name="option"]:checked').value;
+
+            if (option === 'measurements') {
+                const bust = parseFloat(document.getElementById('bust').value);
+                const waist = parseFloat(document.getElementById('waist').value);
+                const hips = parseFloat(document.getElementById('hips').value);
+
+                if (bust > 0 && waist > 0 && hips > 0) {
+                    getRecommendations(bust, waist, hips, null);
+                } else {
+                    alert('Please enter positive values for all measurements.');
+                }
+            } else {
+                const selectedBodyType = document.querySelector('input[name="bodyType"]:checked');
+                if (selectedBodyType) {
+                    getRecommendations(null, null, null, selectedBodyType.value);
+                } else {
+                    alert('Please select your body type.');
+                }
+            }
+        }
+
+        function displayRecommendations(data) {
+    const recommendationsDiv = document.getElementById('recommendations');
+    recommendationsDiv.innerHTML = `<h3>Body Type: ${data.body_type.toUpperCase()}</h3>`;
+    
+    if (data.recommendations.length > 0) {
+        const list = document.createElement('ul');
+        data.recommendations.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            list.appendChild(listItem);
+        });
+        recommendationsDiv.appendChild(list);
+    } else {
+        recommendationsDiv.innerHTML += '<p>No recommendations available.</p>';
+    }
+    recommendationsDiv.style.display = 'block';
+}
+
+    </script>
+
+        <!-- TOP BRANDS DISPLAY 1 HEADING -->
+        <h1 class="brand_heading">biggest deals on top brands</h1>
+        <div id="topBrand_women" class="container">
+            <div><img src="https://bit.ly/3Dk3plz" alt="brand1"></div>
+          <div><img src="https://bit.ly/3NyBqDe" alt="brand2"></div>
+          <div><img src="https://bit.ly/3qN2Ewp" alt="brand3"></div>
+          <div><img src="https://bit.ly/3NyivIY" alt="brand4"></div>
+          <div><img src="https://bit.ly/3NwbdVT" alt="brand5"></div>
+          <div><img src="https://bit.ly/3NrgMVT" alt="brand6"></div>
+          <div class="forWeb"><img src="https://bit.ly/3IJeKg4" alt="brand7"></div>
+          <div class="forWeb"><img src="https://bit.ly/3DlD3zC" alt="brand8"></div>
+          <div class="forWeb"><img src="https://bit.ly/36Ymhu7" alt="brand9"></div>
+          <div class="forWeb"><img src="https://bit.ly/3IN5iZ5" alt="brand10"></div>
+      </div>
+
+         <!--CATEGORIES DISPLAY 2--> 
+       <h1 class="brand_heading">trending in western wear</h1>
+         <div class="container builder">
+            <div><img src="https://bit.ly/3wMju21" alt="category1"></div>
+            <div><img src="https://bit.ly/3NvX0ID" alt="category2"></div>
+            <div><img src="https://bit.ly/3tMNJ75" alt="category3"></div>
+            <div><img src="https://bit.ly/3qJVBV4" alt="category4"></div>
+            <div><img src="https://bit.ly/3uBoKCX" alt="category5"></div>
+         </div>
+
+         <!-- CATEGORIES DISPLAY 3 -->
+         <h1 class="brand_heading">trending in indian wear</h1>
+         <div class="container builder">
+            <div><img src="https://bit.ly/3K69wN7" alt="category1"></div>
+            <div><img src="https://bit.ly/3iODr09" alt="category2"></div>
+            <div><img src="https://bit.ly/3IOGpw4" alt="category3"></div>
+            <div><img src="https://bit.ly/38furzf" alt="category4"></div>
+            <div><img src="https://bit.ly/36I8HeC" alt="category5"></div>
+         </div>
+
+
+          <!--CATEGORIES DISPLAY 4 -->
+          <h1 class="brand_heading">trending in sports wear</h1>
+          <div class="container builder">
+             <div><img src="https://bit.ly/3K69y7H" alt="category1"></div>
+             <div class="forMob"><img src="https://bit.ly/3iN4YPn" alt="category2"></div>
+             <div><img src="https://bit.ly/36YoFkz" alt="category3"></div>
+             <div class="forWeb"><img src="https://bit.ly/3wINHPL" alt="category4"></div>
+             <div class="forWeb"><img src="https://bit.ly/3ISRhsO" alt="category5"></div>
+          </div>
+
+
+          <!--CATEGORIES DISPLAY 5 -->
+          <h1 class="brand_heading">trending in footwear</h1>
+          <div class="container builder">
+             <div><img src="https://bit.ly/3Lm8hJN" alt="category1"></div>
+             <div><img src="https://bit.ly/3wOjfDM" alt="category2"></div>
+             <div class="forMob"><img src="https://bit.ly/3uCXq7p" alt="category3"></div>
+             <div class="forWeb"><img src="https://bit.ly/36VIvx8" alt="category4"></div>
+             <div class="forWeb"><img src="https://bit.ly/3IR4WR4" alt="category5"></div>
+          </div>
+
+
+          <!-- CATEGORIES DISPLAY 6 -->
+          <h1 class="brand_heading">trending in accessories</h1>
+          <div class="container builder">
+             <div><img src="https://bit.ly/3DnaNMZ" alt="category1"></div>
+             <div><img src="https://bit.ly/3wN8xxt" alt="category2"></div>
+             <div class="forMob"><img src="https://bit.ly/3LnQNwv" alt="category3"></div>
+             <div class="forWeb"><img src="https://bit.ly/35jAgu6" alt="category4"></div>
+             <div class="forWeb"><img src="https://bit.ly/3IN87cD" alt="category5"></div>
+          </div>
+</body>
+</html>
