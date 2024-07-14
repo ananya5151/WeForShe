@@ -3,7 +3,7 @@ from flask_cors import CORS  # type: ignore
 import pandas as pd # type: ignore
 from sklearn.model_selection import train_test_split # type: ignore
 from sklearn.tree import DecisionTreeClassifier # type: ignore
-import joblib
+import joblib # type: ignore
 from sklearn.preprocessing import LabelEncoder # type: ignore
 import os
 
