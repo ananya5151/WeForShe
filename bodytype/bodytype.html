@@ -22,8 +22,8 @@
         <ul id="nav_bar">
             <li><a href="../Homepages/menHomePage.html">men</a></li>
             <li><a href="../Homepages/womenHomePage.html">women</a></li>
-            <li><a href="#">kids</a></li>
             <li><a href="../Homepages/homeLiving.html">home & living</a></li>
+            <li id="insta"><a href="../insta/insta.html">TRENDSETTER</a><span>new</span></li>
             <li id="body"><a href="../bodytype/bodytype.html">BodyWISE</a><span>new</span></li>
             <li id="colour"><a href="../colour-theroy/colourtheory.html">colour-theory</a><span>new</span></li>
         </ul>
@@ -56,8 +56,8 @@
                 <div class="top">
                     <a href="menHomePage.html">men</a>
                     <a href="womenHomePage.html">women</a>
-                    <a href="#">kids</a>
                     <a href="homeLiving.html">home & living</a>
+                    <a href="../insta/insta.html">insta</a>
                     <a href="../bodytype/bodytype.html">body</a>
                     <a href="../colour-theroy/colourtheory.html">colour</a>
                 </div> 
@@ -99,27 +99,36 @@
         <label>
             <input type="radio" name="bodyType" value="Hourglass">
             Hourglass
+            <img src="4.jpg" alt="Hourglass Body Type" style="width: 50px; height: auto;">
         </label>
         <label>
             <input type="radio" name="bodyType" value="Pear">
             Pear
+            <img src="3.jpg" alt="Pear Body Type" style="width: 50px; height: auto;">
         </label>
         <label>
             <input type="radio" name="bodyType" value="Apple">
             Apple
+            <img src="2.jpg" alt="Apple Body Type" style="width: 50px; height: auto;">
         </label>
         <label>
             <input type="radio" name="bodyType" value="Rectangle">
             Rectangle
+            <img src="5.jpg" alt="Rectangle Body Type" style="width: 50px; height: auto;">
         </label>
         <label>
             <input type="radio" name="bodyType" value="Inverted Triangle">
             Inverted Triangle
+            <img src="1.png" alt="Inverted Triangle Body Type" style="width: 60px; height: auto;">
         </label>
     </section>
+    
 
     <button onclick="handleUserSelection()">Get Recommendations</button>
     <div id="recommendations"></div>
+    <div class="clothes recommendation-section" style="display:none;"></div>
+
+    <script src="clothingData.js"></script>
 
     <script>
         document.querySelectorAll('input[name="option"]').forEach(input => {
@@ -200,7 +209,29 @@
         recommendationsDiv.innerHTML += '<p>No recommendations available.</p>';
     }
     recommendationsDiv.style.display = 'block';
+
+    // Add clothing recommendations
+    const clothingSection = document.querySelector('.clothes.recommendation-section');
+    clothingSection.innerHTML = `<h3 class="clothing-header">Recommended Clothing:</h3>`;
+
+    const clothingItems = clothingData[data.body_type] || [];
+    clothingItems.forEach(item => {
+        clothingSection.innerHTML += `
+            <div class="clothing-item">
+                <img src="${item.image_url}" alt="${item.para}" />
+                <div class="clothing-details">
+                    <p><strong>Brand:</strong> ${item.brand}</p>
+                    <p>${item.para}</p>
+                    <p><strong>Price:</strong> ${item.price} <span style="text-decoration: line-through;">${item.strikedoffprice}</span> <span>${item.offer}</span></p>
+                    <button>${item.wishList}</button>
+                    <button>${item.addToBag}</button>
+                </div>
+            </div>
+        `;
+    });
+    clothingSection.style.display = 'grid';
 }
+
 
     </script>
 

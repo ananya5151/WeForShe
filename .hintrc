@@ -16,9 +16,11 @@
       "default",
       {
         "ignore": [
-          "max-width: fit-content"
+          "max-width: fit-content",
+          "user-select"
         ]
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }

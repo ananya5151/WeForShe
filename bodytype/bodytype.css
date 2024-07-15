@@ -20,6 +20,23 @@ body {
         margin-top: 7%;
     
 }
+nav_bar span {
+    color: red; /* Change color as needed */
+    position: absolute; /* Keeps it out of flow, can adjust based on need */
+    top: 30%; /* Adjusts vertical position */
+    left: 105%; /* Moves it horizontally, might need to adjust */
+    font-size: 1.2rem; /* Font size */
+    font-weight: 700; /* Bold font weight */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+li {
+    position: relative; /* Needed for absolute positioning of child elements */
+    display: inline-block; /* Ensures list items are displayed inline */
+    padding: 10px; /* Adds some space around the items */
+}
+
+
 .option-selection {
     font-size: larger;
     max-width: 600px;
@@ -36,6 +53,50 @@ body {
     font-family: fantasy;
     font-size: 30px;
     color: #c72c96;
+}
+.body-type-selection {
+    display: none; /* Adjust based on when you want to show this section */
+    text-align: center;
+}
+
+.body-type-selection h3 {
+    margin-left: 3%;
+    margin-top: 2.5%;
+    color: #2e0b04;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+.body-type-selection label {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.body-type-selection .top-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.body-type-selection .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.body-type-selection img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 105px !important;
+    height: 105px !important;
+    object-fit: cover; 
+    border-radius: 4px; /* Optional: adds rounded corners */
+    border: 5px solid #930e72; /* Add border */
+    padding: 4px; /* Optional: adds padding inside the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
 .measurements-input {
@@ -97,14 +158,6 @@ button:hover {
     font-weight: bold;
 }
 
-.body-type-selection h3{
-    margin-left: 41%;
-    margin-top: 2.5%;
-    color:#2e0b04;
-    font-size: 40px;
-    font-family: fantasy;
-
-}
 
 #recommendations {
     display: none;
@@ -143,4 +196,65 @@ button:hover {
 
 #recommendations li:hover {
     background-color: #e9c8de; /* Change background on hover */
+}
+.recommendation-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.clothing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Spacing between items */
+    margin: 20px; /* Outer margin */
+}
+
+.clothing-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.clothing-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.clothing-details {
+    margin-top: 10px;
+}
+
+.clothing-details p {
+    margin: 5px 0;
+}
+
+.clothing-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff3e6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clothing-details button:hover {
+    background-color: #e4355d;
+}
+
+.clothing-header {
+    font-family: fantasy;
+    font-size: 60px; /* Adjust size as needed */
+    color: var(--primaryColor); /* Use your primary color */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some margin for spacing */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Adjust spacing between letters */
+    font-weight: bold; /* Make the font bold */
+    padding-bottom: 10px; /* Add space below the text */
+    margin-top: 7%;
+    margin-left: 0%;
 }
